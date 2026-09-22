@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.4
+
+- Restore the registered Community plugin ID `bondie-docferry` while retaining
+  the MediaFerry display name.
+- Preserve existing protocol, session-storage and service contracts.
+- Pin the registered ID in release validation and regression tests.
+- Verify published release versions and downloaded asset hashes in CI.
+- Correct manual installation paths and provide backup-first migration guidance.
+
 ## 0.1.2 - 2026-08-13
 
 - Preserve DocFerry's validated source thumbnail when saving or sharing a generated

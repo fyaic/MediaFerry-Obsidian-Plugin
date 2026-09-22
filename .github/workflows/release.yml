@@ -48,3 +48,7 @@ jobs:
             --verify-tag \
             --title "$GITHUB_REF_NAME" \
             --notes-file RELEASE_NOTES.md
+      - name: Verify published install assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/verify-published-release.mjs

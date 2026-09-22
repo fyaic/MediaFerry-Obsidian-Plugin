@@ -4,17 +4,20 @@
 
 [English](ENGINEERING.md) · **中文** — [‹ 用户文档](README.zh-CN.md)
 
-MediaFerry（id `mediaferry`）是一个移动优先的 Obsidian 插件（TypeScript + esbuild，无前端框架），
+MediaFerry（id `bondie-docferry`）是一个移动优先的 Obsidian 插件（TypeScript + esbuild，无前端框架），
 作为托管 Bondie / SynapseHub / DocFerry 服务的客户端。客户端负责链接接入、移动端
 UI、本地设置、原生 Vault 写入和显式的分享选择；所有需要凭据或重处理的环节都留在
 服务端。
 
-> **命名。** 插件名为 **MediaFerry**（id `mediaferry`）。此前的 RC 版本以
+> **命名。** 插件名为 **MediaFerry**（已登记 id `bondie-docferry`）。此前的 RC 版本以
 > *Bondie-Docferry* 之名发布。内部标识符有意保留旧的 `bondie-docferry` 前缀，因为
 > 它们是服务端或存储契约：`obsidian://bondie-docferry-auth` 协议处理器（托管登录的
 > 跳转目标）、`src/auth/session.ts` 中的 SecretStorage 键（改名会让现有会话孤儿化）、
 > `PRODUCTION_SERVER_URL`、`bondie-docferry.pro` 权益键，以及内部 view-type/CSS 标识。
 > 下图中的 *Bondie-Docferry 服务* 是托管后端组件，保持原名。
+
+0.1.3 错误修改了安装 ID；0.1.4 恢复现有 Community 身份。仓库或显示名称变化
+不要求修改 ID，发布校验已固定检查 `bondie-docferry`。
 
 ## 架构
 

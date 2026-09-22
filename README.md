@@ -134,13 +134,18 @@ keep it.
    directory listing.
 3. Testers and reviewers can install manually: download `main.js`, `manifest.json`, and
    `styles.css` from the [latest release](https://github.com/fyaic/MediaFerry-Obsidian-Plugin/releases),
-   drop them into `<vault>/.obsidian/plugins/mediaferry/`, restart Obsidian, and
+   drop them into `<vault>/.obsidian/plugins/bondie-docferry/`, restart Obsidian, and
    enable MediaFerry in Community plugins.
 4. Tap the **ship icon** in the ribbon (or run **Open home**), paste your first link,
    and watch it become a note.
 
 Share import works immediately, no account. Turning articles, audio, and video into
 notes requires a free Bondie account and a DocFerry Pro membership — see below.
+
+**Identity correction in 0.1.4.** MediaFerry is the display name; the registered
+Community ID remains `bondie-docferry`. Existing installs under that ID update
+in place. Manual testers of 0.1.3 should read the backup-first migration in
+[the release notes](RELEASE_NOTES.md); do not delete your plugin configuration.
 
 ## Good to know
 
