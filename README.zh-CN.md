@@ -104,7 +104,7 @@ MediaFerry 在 Obsidian 支持的每个平台上都能用。移动端不是缩�
 
 1. 需要 Obsidian **1.11.4 或更高版本**，手机端或桌面端均可。
 2. **当前状态：发布候选（RC）。** MediaFerry 正在进行社区插件审核，尚未进入官方插件目录。最省事的方式是等目录上架。
-3. 测试者和审核者可以手动安装：从 [最新 release](https://github.com/fyaic/MediaFerry-Obsidian-Plugin/releases) 下载 `main.js`、`manifest.json`、`styles.css`，放进 `<vault>/.obsidian/plugins/mediaferry/`，重启 Obsidian，在社区插件里启用 MediaFerry。
+3. 测试者和审核者可以手动安装：从 [最新 release](https://github.com/fyaic/MediaFerry-Obsidian-Plugin/releases) 下载 `main.js`、`manifest.json`、`styles.css`，放进 `<vault>/.obsidian/plugins/bondie-docferry/`，重启 Obsidian，在社区插件里启用 MediaFerry。
 4. 点击侧边栏的 **船图标**（或运行 **Open home** 命令），粘贴第一条链接，看它变成笔记。
 
 导入分享开箱即用、无需账户。把文章、音频、视频变成笔记需要免费 Bondie 账户和 DocFerry Pro 会员 —— 见下文。

@@ -5,6 +5,13 @@ const packageJson = JSON.parse(await readFile("package.json", "utf8"));
 const versions = JSON.parse(await readFile("versions.json", "utf8").catch(() => "{}"));
 
 const failures = [];
+if (manifest.id !== "bondie-docferry") {
+  failures.push("Community identity must remain bondie-docferry even when the display name changes");
+}
+const lock = JSON.parse(await readFile("package-lock.json", "utf8"));
+if (lock.version !== manifest.version || lock.packages?.[""]?.version !== manifest.version) {
+  failures.push("lockfile version differs from manifest");
+}
 const pluginIdPattern = /^[a-z0-9][a-z0-9-]*[a-z0-9]$/;
 const semverPattern = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/;
 const requiredStringFields = ["id", "name", "version", "minAppVersion", "description", "author"];

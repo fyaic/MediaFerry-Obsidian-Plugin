@@ -5,12 +5,12 @@
 
 **English** · [中文](ENGINEERING.zh-CN.md) — [‹ User README](README.md)
 
-MediaFerry (id `mediaferry`) is a mobile-first Obsidian plugin (TypeScript, esbuild, no framework)
+MediaFerry (id `bondie-docferry`) is a mobile-first Obsidian plugin (TypeScript, esbuild, no framework)
 that fronts the hosted Bondie / SynapseHub / DocFerry services. The client owns link
 intake, the mobile UI, local settings, native Vault writes, and the explicit sharing
 choice. Everything that needs credentials or heavy processing stays server-side.
 
-> **Naming.** The plugin is named **MediaFerry** (id `mediaferry`). Its release
+> **Naming.** The plugin is named **MediaFerry** (registered id `bondie-docferry`). Its release
 > candidates shipped under the earlier name *Bondie-Docferry*. Internal identifiers
 > intentionally keep the legacy `bondie-docferry` prefix because they are server or
 > storage contracts: the `obsidian://bondie-docferry-auth` protocol handler (the hosted
@@ -18,6 +18,10 @@ choice. Everything that needs credentials or heavy processing stays server-side.
 > would orphan existing sessions), `PRODUCTION_SERVER_URL`, the `bondie-docferry.pro`
 > entitlement key, and the internal view-type/CSS identifiers. The *Bondie-Docferry
 > service* in the diagram below is a hosted backend component and keeps its name.
+
+Version 0.1.3 incorrectly renamed the installation ID. Version 0.1.4 restores
+the existing Community identity; repository and display names do not require
+an ID rename. Release validation pins that identity.
 
 ## Architecture
 
